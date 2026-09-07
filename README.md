@@ -156,6 +156,7 @@ though the repo is Apache-2.0).
 | [`docs/research/`](docs/research/) | The sourced research the decisions rest on — every claim carries a URL and a confidence level |
 | [`docs/ops/setup.md`](docs/ops/setup.md) | Environment setup; says which toolchains you actually need |
 | [`CONTRIBUTING.md`](CONTRIBUTING.md) | Conventions, and the six rules that are not negotiable |
+| [`CHANGELOG.md`](CHANGELOG.md) | What has been decided, added and fixed |
 
 ### Research notes
 
