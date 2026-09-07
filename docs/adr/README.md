@@ -18,6 +18,7 @@ cross-discipline reasoning lives.
 | [0002](0002-trigger-driven-response-not-scheduled-patrol.md) | Dispatch on corroborated triggers, not a patrol schedule | Accepted |
 | [0003](0003-edge-first-three-tier-topology.md) | Edge-first three-tier topology; cloud never in the flight-critical loop | Accepted |
 | [0004](0004-rf-detr-over-ultralytics-yolo.md) | RF-DETR as the detector; no AGPL in the inference path | Accepted |
+| [0005](0005-ardupilot-over-px4.md) | ArduPilot Copter as the flight firmware, run unmodified | Accepted |
 
 ## Format
 
