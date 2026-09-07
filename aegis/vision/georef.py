@@ -52,6 +52,9 @@ from typing import Final, Protocol
 from aegis.domain.geo import Altitude, AltitudeDatum, GeoPoint, LocalFrame, LocalPoint
 from aegis.vision.camera import CameraIntrinsics
 
+Vec3 = tuple[float, float, float]
+"""A 3-vector in the site-local ENU frame, or a direction in it."""
+
 __all__ = [
     "MIN_DEPRESSION_DEG",
     "ErrorTerm",
@@ -266,9 +269,7 @@ def georeference(
     )
 
 
-def _intersect_ground(
-    origin: LocalPoint, ray: tuple[float, float, float], ground: GroundModel
-) -> LocalPoint | None:
+def _intersect_ground(origin: LocalPoint, ray: Vec3, ground: GroundModel) -> LocalPoint | None:
     """Walk the ray down to the ground.
 
     For a flat plane this is one division. For a DSM it is a short fixed-point
@@ -298,7 +299,10 @@ def _intersect_ground(
     return hit
 
 
-def _cross(a: tuple[float, float, float], b: tuple[float, float, float]):
+# Small fixed-size vector helpers. Deliberately not numpy: these run per
+# detection per frame on the companion computer, and for length-3 tuples the
+# array construction overhead exceeds the arithmetic several times over.
+def _cross(a: Vec3, b: Vec3) -> Vec3:
     return (
         a[1] * b[2] - a[2] * b[1],
         a[2] * b[0] - a[0] * b[2],
@@ -306,15 +310,15 @@ def _cross(a: tuple[float, float, float], b: tuple[float, float, float]):
     )
 
 
-def _add(a: tuple[float, float, float], b: tuple[float, float, float]):
+def _add(a: Vec3, b: Vec3) -> Vec3:
     return (a[0] + b[0], a[1] + b[1], a[2] + b[2])
 
 
-def _scale(a: tuple[float, float, float], k: float):
+def _scale(a: Vec3, k: float) -> Vec3:
     return (a[0] * k, a[1] * k, a[2] * k)
 
 
-def _normalise(a: tuple[float, float, float]):
+def _normalise(a: Vec3) -> Vec3:
     n = math.sqrt(a[0] ** 2 + a[1] ** 2 + a[2] ** 2)
     if n == 0.0:
         raise ValueError("cannot normalise a zero-length ray")
