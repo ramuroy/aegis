@@ -19,6 +19,7 @@ cross-discipline reasoning lives.
 | [0003](0003-edge-first-three-tier-topology.md) | Edge-first three-tier topology; cloud never in the flight-critical loop | Accepted |
 | [0004](0004-rf-detr-over-ultralytics-yolo.md) | RF-DETR as the detector; no AGPL in the inference path | Accepted |
 | [0005](0005-ardupilot-over-px4.md) | ArduPilot Copter as the flight firmware, run unmodified | Accepted |
+| [0006](0006-privacy-by-design-no-identifiable-data-by-default.md) | No identifiable data by default; privacy map is policy and runtime config | Accepted |
 
 ## Format
 
