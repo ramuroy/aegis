@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "Apache-2.0" }
 authors = [{ name = "Ramu Roy", email = "royramu694429@gmail.com" }]
-keywords = ["uav", "drone", "security", "computer-vision", "ros2", "px4"]
+keywords = ["uav", "drone", "security", "computer-vision", "ros2", "ardupilot"]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
@@ -148,7 +148,9 @@ module = ["perception.training.*", "perception.notebooks.*"]
 disallow_untyped_defs = false
 
 [[tool.mypy.overrides]]
-module = ["cv2.*", "mavsdk.*", "pymavlink.*", "ultralytics.*", "albumentations.*"]
+# Deliberately does NOT include ultralytics: ADR-0004 forbids the import
+# entirely, so an ignore rule for it would quietly permit one.
+module = ["cv2.*", "mavsdk.*", "pymavlink.*", "albumentations.*", "rfdetr.*", "sahi.*"]
 ignore_missing_imports = true
 
 # ---------------------------------------------------------------------------
@@ -161,7 +163,7 @@ asyncio_mode = "auto"
 addopts = "-ra --strict-markers --strict-config"
 markers = [
     "slow: takes more than a second",
-    "sitl: requires a running PX4 SITL instance",
+    "sitl: requires a running ArduPilot SITL instance",
     "gpu: requires a CUDA device",
     "integration: requires the docker compose stack",
 ]
