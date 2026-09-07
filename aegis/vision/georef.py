@@ -39,7 +39,7 @@ flagged: at 10 degrees depression, one milliradian of gimbal error becomes
 there. Below ``MIN_DEPRESSION_DEG`` the result is not returned.
 
 Expected performance, consistent with the numbers in `docs/research/cv-models.md`:
-**2–5 m CEP** on barometric altitude, **0.5–1.5 m** with RTK and a site DSM.
+**2-5 m CEP** on barometric altitude, **0.5-1.5 m** with RTK and a site DSM.
 """
 
 from __future__ import annotations
