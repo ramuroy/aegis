@@ -152,9 +152,11 @@ Early and honest. This section tracks reality, not intent.
 
 - [x] Architecture decided and documented — 6 ADRs
 - [x] Domain model: typed ULID identifiers, datum-safe geodesy
-- [ ] Privacy map: schema, signing, runtime enforcement
-- [ ] Perception: dataset pipeline, RF-DETR fine-tune, georeferencing
-- [ ] Autonomy: ROS 2 nodes, dispatch state machine, SITL harness
+- [x] Privacy map: schema, HMAC signing, 30 Hz gimbal constraint solver
+- [x] Corroboration gate: modality-family fusion, admission gates, audit trail
+- [x] Georeferencing: camera model, damped-Newton undistortion, error budget
+- [ ] Perception: dataset pipeline, RF-DETR fine-tune, ONNX/TensorRT export
+- [ ] Autonomy: ROS 2 nodes, sortie state machine, SITL harness
 - [ ] Simulation: residential-society world
 - [ ] Backend services and ops dashboard
 - [ ] ESP32 sensor-node firmware
