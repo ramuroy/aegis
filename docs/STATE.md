@@ -40,7 +40,7 @@ from this repository.**
 
 ## 2. Decisions locked in
 
-Six ADRs, all `Accepted`. Each was a genuine fork with a cost.
+Seven ADRs, all `Accepted`. Each was a genuine fork with a cost.
 
 | ADR | Decision | Decided by | Revisit when |
 | --- | --- | --- | --- |
@@ -50,6 +50,7 @@ Six ADRs, all `Accepted`. Each was a genuine fork with a cost.
 | [0004](adr/0004-rf-detr-over-ultralytics-yolo.md) | RF-DETR (Apache-2.0), no AGPL in the inference path | Every Ultralytics generation is AGPL-3.0 and names "edge devices, robotics, cameras" as an Enterprise trigger | A better Apache/MIT small-object detector appears, or commercial intent is dropped |
 | [0005](adr/0005-ardupilot-over-px4.md) | ArduPilot Copter 4.7.x, run **unmodified** | It ships a precision-landing *retry* state machine in firmware; PX4 does not | PX4 ships comparable retry (watch each minor release) |
 | [0006](adr/0006-privacy-by-design-no-identifiable-data-by-default.md) | Emit no identifiable personal data by default | DPDP Act §7 is a **closed list** — no legitimate-interest ground exists in Indian law | DPDP is amended, or 13 May 2027 lands and SPDI 2011 falls away |
+| [0007](adr/0007-ros2-jazzy-and-mavros.md) | ROS 2 Jazzy, bridged with MAVROS not AP_DDS | JetPack 7 is Ubuntu 24.04, so the newer ROS 2 LTS cannot run on the Jetson; AP_DDS documents Humble only | ArduPilot documents AP_DDS on Jazzy+, or the companion computer stops being a Jetson |
 
 ### The three findings that shaped everything
 
@@ -87,7 +88,7 @@ analysis and requires redoing it before anything ships.
 
 ## 3. What is built
 
-~1,800 lines of library code, 132 tests, ruff-clean. All under `aegis/`, which is
+~2,000 lines of library code, 132 tests, ruff-clean. All under `aegis/`, which is
 the shared library every tier imports.
 
 ### `aegis/domain/ids.py` — typed ULID identifiers

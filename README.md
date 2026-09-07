@@ -106,6 +106,7 @@ real cost:
 | [0004](docs/adr/0004-rf-detr-over-ultralytics-yolo.md) | RF-DETR, not YOLO | Every Ultralytics generation is AGPL-3.0; "edge devices, robotics, cameras" is a named Enterprise trigger |
 | [0005](docs/adr/0005-ardupilot-over-px4.md) | ArduPilot, run **unmodified** | It ships a precision-landing *retry* state machine; PX4 doesn't. Running stock keeps GPLv3 off our code |
 | [0006](docs/adr/0006-privacy-by-design-no-identifiable-data-by-default.md) | Emit no identifiable data by default | DPDP §7 is a **closed list** — no legitimate-interest ground exists in Indian law |
+| [0007](docs/adr/0007-ros2-jazzy-and-mavros.md) | ROS 2 Jazzy, bridged with MAVROS | No JetPack exists for the Ubuntu the current ROS 2 LTS needs; AP_DDS documents Humble only |
 
 ### The idea I'm most pleased with
 
@@ -174,7 +175,7 @@ though the repo is Apache-2.0).
 
 Early and honest. This section tracks reality, not intent.
 
-- [x] Architecture decided and documented — 6 ADRs
+- [x] Architecture decided and documented — 7 ADRs
 - [x] Domain model: typed ULID identifiers, datum-safe geodesy
 - [x] Privacy map: schema, HMAC signing, 30 Hz gimbal constraint solver
 - [x] Corroboration gate: modality-family fusion, admission gates, audit trail
