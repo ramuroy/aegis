@@ -146,6 +146,30 @@ though the repo is Apache-2.0).
 
 ---
 
+## Documentation
+
+| Document | What it is for |
+| --- | --- |
+| [`docs/STATE.md`](docs/STATE.md) | **Start here.** Where the project is, what changed, what to do next |
+| [`docs/adr/`](docs/adr/) | Why each decision was made, and what would make us revisit it |
+| [`docs/research/`](docs/research/) | The sourced research the decisions rest on — every claim carries a URL and a confidence level |
+| [`docs/ops/setup.md`](docs/ops/setup.md) | Environment setup; says which toolchains you actually need |
+| [`CONTRIBUTING.md`](CONTRIBUTING.md) | Conventions, and the six rules that are not negotiable |
+
+### Research notes
+
+| Note | Covers |
+| --- | --- |
+| [architecture](docs/research/architecture.md) | Edge/cloud split, transport, video, alerting, Indian carrier constraints |
+| [cv-models](docs/research/cv-models.md) | Detector licensing, small-object detection, edge accelerators, georeferencing |
+| [flight-stack](docs/research/flight-stack.md) | ArduPilot vs PX4, ROS 2, precision landing, docking, simulation |
+| [privacy-law](docs/research/privacy-law.md) | DPDP Act, consent, overflight, CERT-In, case law |
+| [prior-art](docs/research/prior-art.md) | Commercial drone-in-a-box landscape and the India gap |
+| [unit-economics](docs/research/unit-economics.md) | What societies pay today, cost to serve, noise, insurance, risk register |
+| [hardware-bom](docs/research/hardware-bom.md) | Priced BOM at three tiers, and the RF licensing trap |
+
+---
+
 ## Status
 
 Early and honest. This section tracks reality, not intent.
@@ -189,18 +213,23 @@ the tree you are standing in.
 ## Repository layout
 
 ```
-aegis/        shared domain model — the vocabulary every subsystem speaks
-autonomy/     ROS 2 workspace: flight, dispatch state machine, SITL harness
-perception/   dataset pipeline, training, evaluation, georeferencing, export
-services/     edge and cloud backend services
-web/          operations dashboard
-firmware/     ESP32 perimeter, gate and dock-controller firmware
-sim/          Gazebo worlds, ArduPilot SITL configuration
-infra/        compose, k8s, observability
-docs/adr/     architecture decision records — start here
-docs/hardware/ BOM, wiring, dock design
-docs/compliance/ DGCA and DPDP compliance checklists
-paper/        IEEE-format paper
+aegis/            shared library — domain model, privacy map, dispatch, vision
+  domain/         ids, geodesy, privacy map, sensing, corroboration gate
+  vision/         camera model, georeferencing
+autonomy/         ROS 2 workspace: flight, sortie state machine, SITL harness
+perception/       dataset pipeline, training, evaluation, export
+services/         edge and cloud backend services
+web/              operations dashboard
+firmware/         ESP32 perimeter, gate and dock-controller firmware
+sim/              Gazebo worlds, ArduPilot SITL configuration
+infra/            compose, k8s, observability
+tests/            132 tests, property-based where the maths warrants it
+docs/
+  STATE.md        where the project is, and what to do next — read this first
+  adr/            architecture decision records — the reasoning
+  research/       sourced research notes behind every decision
+  ops/setup.md    environment setup for all four toolchains
+paper/            IEEE-format paper
 ```
 
 ---
