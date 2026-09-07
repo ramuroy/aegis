@@ -12,7 +12,7 @@ of metres:
 * **AMSL** — height above mean sea level. What airspace limits are written in,
   and what a barometer reports after calibration.
 * **HAE** — height above the WGS-84 ellipsoid. What raw GNSS reports. Differs
-  from AMSL by the geoid undulation, which is roughly **−65 to −100 m across
+  from AMSL by the geoid undulation, which is roughly **-65 to -100 m across
   India** — one of the largest geoid anomalies anywhere on Earth. A system that
   conflates HAE and AMSL over Pune is wrong by about 65 metres, which is more
   than the entire legal altitude envelope.
@@ -38,12 +38,12 @@ from enum import Enum
 from typing import Final
 
 __all__ = [
-    "AltitudeDatum",
     "Altitude",
-    "GeoPoint",
-    "LocalPoint",
-    "LocalFrame",
     "AltitudeBand",
+    "AltitudeDatum",
+    "GeoPoint",
+    "LocalFrame",
+    "LocalPoint",
     "bearing_deg",
     "haversine_m",
 ]
@@ -107,8 +107,8 @@ class Altitude:
         """Convert HAE to AMSL.
 
         ``geoid_undulation_m`` is the local geoid height (EGM2008 or similar),
-        which over India is large and negative — roughly −65 m near Pune,
-        approaching −100 m off the south-east coast. There is no sensible
+        which over India is large and negative — roughly -65 m near Pune,
+        approaching -100 m off the south-east coast. There is no sensible
         default: passing the wrong sign here is a 130 m error, so the caller
         must supply it from a geoid model for the site.
         """
@@ -158,9 +158,7 @@ class LocalPoint:
     up: float = 0.0
 
     def distance_to(self, other: LocalPoint) -> float:
-        return math.dist(
-            (self.east, self.north, self.up), (other.east, other.north, other.up)
-        )
+        return math.dist((self.east, self.north, self.up), (other.east, other.north, other.up))
 
     def ground_distance_to(self, other: LocalPoint) -> float:
         """Horizontal distance, ignoring altitude difference."""
@@ -179,7 +177,7 @@ class LocalFrame:
     georeferencing path runs this per detection per frame.
     """
 
-    __slots__ = ("origin", "_lat0_rad", "_m_per_deg_lat", "_m_per_deg_lon")
+    __slots__ = ("_lat0_rad", "_m_per_deg_lat", "_m_per_deg_lon", "origin")
 
     def __init__(self, origin: GeoPoint) -> None:
         self.origin = origin

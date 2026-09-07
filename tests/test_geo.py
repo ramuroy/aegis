@@ -78,7 +78,7 @@ class TestAltitudeDatumSafety:
 
     def test_hae_to_agl_requires_going_via_amsl(self) -> None:
         hae = Altitude(500.0, AltitudeDatum.HAE)
-        with pytest.raises(TypeError, match="convert .* to AMSL"):
+        with pytest.raises(TypeError, match=r"convert .* to AMSL"):
             hae.to_agl(terrain_amsl_m=560.0)
 
     @pytest.mark.parametrize("bad", [math.nan, math.inf, -math.inf])
