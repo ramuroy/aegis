@@ -16,6 +16,7 @@ cross-discipline reasoning lives.
 | --- | ----- | ------ |
 | [0001](0001-record-architecture-decisions.md) | Record architecture decisions | Accepted |
 | [0002](0002-trigger-driven-response-not-scheduled-patrol.md) | Dispatch on corroborated triggers, not a patrol schedule | Accepted |
+| [0003](0003-edge-first-three-tier-topology.md) | Edge-first three-tier topology; cloud never in the flight-critical loop | Accepted |
 
 ## Format
 
