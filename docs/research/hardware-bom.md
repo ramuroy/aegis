@@ -155,7 +155,7 @@ pre-monsoon squalls.
   ENGINEERING CONSEQUENCE: 1% duty cycle = 36 seconds of transmit per hour. Continuous
   1 Hz MAVLink telemetry over 868 MHz LoRa is not lawful under Table-I; even Table-II's
   2.5% is 90 s/hour. Use 868 MHz for heartbeat/alarm only.
-  Source: Gazette of India Extraordinary Part II Sec 3(i (primary document, fetched as PDF)., G.S.R. 853(E) dated 10.12.2021)
+  Source: Gazette of India Extraordinary Part II Sec 3(i), G.S.R. 853(E) dated 10.12.2021 (primary document, fetched as PDF).
 
 - **WPC Equipment Type Approval is a per-model self-declaration on the Saral Sanchar
   portal and has an explicit 'Drones' equipment category** —
