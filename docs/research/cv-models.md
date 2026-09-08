@@ -1,5 +1,16 @@
 # Computer Vision & Models
 
+## Applicability update: 2026-09-08
+
+RF-DETR remains the accepted model family; no AGPL or ultralytics is permitted in
+the training/inference path. That decision does not clear every dataset, weight
+file or transitive dependency. Next work is provenance/licence review, reproducible
+dataset preparation and a baseline feeding existing georeferencing.
+No training, export, SAHI sweep or hardware benchmark ran in this session; numbers
+below remain source-reported research, not newly measured AEGIS performance.
+See the [handoff](../HANDOFF-2026-09-08.md) and [perception plan](../../perception/README.md).
+
+
 > Research note for [AEGIS](../../README.md). Compiled 2026-09-07 from a multi-agent
 > web research sweep. Every claim below is sourced; confidence levels are the
 > researcher's own and are preserved verbatim.

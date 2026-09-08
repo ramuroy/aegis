@@ -1,5 +1,21 @@
 # Changelog
 
+## 2026-09-08 documentation handoff
+
+- Added [regulatory research](docs/research/drone-regulation.md) and a
+  [resumable handoff](docs/HANDOFF-2026-09-08.md), including decisions, rationale,
+  source-retrieval limits and the distinction between R&D and commercial flight.
+- Recovered DGCA's nano/model registration instructions and visually read the
+  2024 amendment through Brave; retained project-specific approval gates.
+- Reconciled the README, STATE, older research notes, subsystem plans, setup
+  guidance and ADR index with this checkpoint. Historical source snapshots and
+  accepted ADRs remain intact; dated corrections qualify older broad claims.
+- Clarified planned versus implemented licence/CI enforcement and historical
+  test/setup evidence. Next work is perception provenance and dataset preparation.
+- No runtime, firmware, dependencies or accepted ADR bodies changed. No tests,
+  lint, training, deployment or physical-flight validation ran in this session.
+
+
 Notable changes to AEGIS. Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/);
 versioning will follow [Semantic Versioning](https://semver.org/) from the first
 release.
@@ -106,9 +122,15 @@ Also fixed, in documentation and tooling:
 
 ### Known gaps
 
-- **DGCA regulation research is incomplete.** Seven of eight research topics
-  landed; the Indian drone-regulation sweep failed on a rate limit. It determines
-  what is legally claimable and is the first thing to re-run.
+- **DGCA research follow-up (2026-09-08):** added the sourced
+  [drone-regulation checkpoint](docs/research/drone-regulation.md) and updated the
+  handoff. Distinguishes conditional R&D from commercial operation, separate
+  TC/UIN/RPC requirements, registration suspension and the recovered nano/model
+  application instructions, import exceptions,
+  amendment/source limits and the unresolved preflight/offline-dispatch contract.
+  Legal coverage and physical-flight approval remain PARTIAL. Next software work
+  is perception licence provenance, dataset preparation and an RF-DETR baseline;
+  accepted ADRs and runtime code are unchanged.
 - No CI pipeline. `tools/check_licences.py`, promised by ADR-0004, is specified
   but not written.
 - Perception, autonomy, simulation, services, web, firmware, hardware spec, paper

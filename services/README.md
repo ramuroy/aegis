@@ -1,5 +1,15 @@
 # services — edge and cloud
 
+## Continuation boundary: 2026-09-08
+
+No backend service or regulator integration was implemented or deployed here.
+The [regulatory checkpoint](../docs/research/drone-regulation.md) distinguishes
+administrative eGCA services from Digital Sky operational airspace services.
+That source description is not a supported public API contract; no authenticated
+workflow was exercised. Future dispatch must distinguish a corroborated event
+from current aircraft launch eligibility. See the [handoff](../docs/HANDOFF-2026-09-08.md).
+
+
 Two deployment targets with genuinely different jobs, split by latency budget
 ([ADR-0003](../docs/adr/0003-edge-first-three-tier-topology.md)).
 

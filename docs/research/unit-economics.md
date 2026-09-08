@@ -1,5 +1,18 @@
 # Unit Economics, Operations & Safety
 
+## Applicability corrections: 2026-09-08
+
+This session did not refresh quotes, taxes, exchange rates, certification costs
+or the financial model below. Treat them as historical research assumptions.
+The [regulatory checkpoint](drone-regulation.md) qualifies procurement claims:
+DGFT's cited prohibition has authorization exceptions, and a free component
+import policy does not mean duty-free or approval of a complete drone/dock bundle.
+The recovered non-TC instructions are an application route, not guaranteed
+registration or commercial-service clearance. Do not budget a specific aircraft
+as deployable until configuration, import, registration and operating gates close.
+See the [handoff](../HANDOFF-2026-09-08.md) for the remaining evidence work.
+
+
 > Research note for [AEGIS](../../README.md). Compiled 2026-09-07 from a multi-agent
 > web research sweep. Every claim below is sourced; confidence levels are the
 > researcher's own and are preserved verbatim.

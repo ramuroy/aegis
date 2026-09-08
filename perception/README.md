@@ -1,5 +1,22 @@
 # perception — detection models
 
+## Next implementation slice: 2026-09-08
+
+1. Establish primary-source licence/provenance records for proposed VisDrone/UAVDT
+   datasets, exact RF-DETR code/weights and transitive dependencies. Preserve the
+   no-AGPL/no-ultralytics boundary; model selection is not blanket licence clearance.
+2. Build reproducible dataset preparation with documented inputs and splits.
+3. Implement a minimal inference baseline feeding the existing camera/georeferencing
+   types before layering SAHI sweeps, export and acceleration onto it.
+4. Record exact model, data, hardware and procedure before reporting evaluation or
+   ONNX/TensorRT performance. The documented Jetson platform still needs exact
+   compatibility confirmation before installation or deployment.
+
+No dataset download, training, export or benchmark was performed in this session.
+This software task is separate from the [physical-flight gates](../docs/research/drone-regulation.md).
+Read the [handoff](../docs/HANDOFF-2026-09-08.md) for decisions retained and rationale.
+
+
 Dataset preparation, training, evaluation and export. This is *offline* work: the
 deployed inference path lives on the companion computer and runs ONNX/TensorRT,
 not PyTorch.

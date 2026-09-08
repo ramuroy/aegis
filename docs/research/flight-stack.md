@@ -1,5 +1,16 @@
 # Flight & Autonomy Stack
 
+## Applicability update: 2026-09-08
+
+Accepted ADRs retain stock ArduPilot, the no-C++-fork boundary, permitted Lua and
+the ROS 2 Jazzy/MAVROS integration direction. This session did not requalify the
+version/hardware matrix, run SITL or approve a real aircraft configuration.
+Autopilot capability and an autonomous-UAS category are not proof of permission
+for unattended/BVLOS/night service. The [regulatory checkpoint](drone-regulation.md)
+supersedes broader legal assumptions below and identifies the open offline-launch
+question without changing accepted ADRs. See the [handoff](../HANDOFF-2026-09-08.md).
+
+
 > Research note for [AEGIS](../../README.md). Compiled 2026-09-07 from a multi-agent
 > web research sweep. Every claim below is sourced; confidence levels are the
 > researcher's own and are preserved verbatim.

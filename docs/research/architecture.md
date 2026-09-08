@@ -1,5 +1,16 @@
 # System Architecture
 
+## Applicability update: 2026-09-08
+
+This note retains its original research snapshot. Accepted ADRs govern the
+selected architecture; alternate research recommendations do not supersede them.
+The [regulatory checkpoint](drone-regulation.md) qualifies flight-related claims:
+edge-first sensing can continue offline, but an aircraft's current launch basis
+must be established separately. The proposed prelaunch refusal behavior remains
+an open design question, not a changed ADR or implemented feature.
+See the [handoff](../HANDOFF-2026-09-08.md) for decisions retained and why.
+
+
 > Research note for [AEGIS](../../README.md). Compiled 2026-09-07 from a multi-agent
 > web research sweep. Every claim below is sourced; confidence levels are the
 > researcher's own and are preserved verbatim.

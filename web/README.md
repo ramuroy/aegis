@@ -1,5 +1,15 @@
 # web — operations dashboard
 
+## Continuation boundary: 2026-09-08
+
+No dashboard/UI code or deployment changed in this session. Future operator views
+should distinguish sensor corroboration, privacy-policy status and aviation launch
+eligibility instead of presenting a trigger as flight approval. This is a planning
+implication, not an implemented UI or accepted new ADR. The existing privacy
+boundary remains in force. See the [regulatory checkpoint](../docs/research/drone-regulation.md)
+and [handoff](../docs/HANDOFF-2026-09-08.md) before making readiness claims.
+
+
 The console an operator actually watches. Its job is to make one alert out of
 many events legible fast enough to act on.
 

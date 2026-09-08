@@ -1,5 +1,14 @@
 # firmware — ESP32 sensor nodes
 
+## Continuation boundary: 2026-09-08
+
+No ESP32 firmware was implemented, flashed or bench-validated in this session.
+Fixed sensing remains the always-on layer in the accepted event-driven design.
+A corroborated trigger is not itself permission to launch an aircraft; the
+[regulatory checkpoint](../docs/research/drone-regulation.md) records those separate
+open gates. See the [handoff](../docs/HANDOFF-2026-09-08.md) for the current task order.
+
+
 The always-on layer. Under [ADR-0002](../docs/adr/0002-trigger-driven-response-not-scheduled-patrol.md)
 this — not the drone — is what provides 24/7 coverage, and it is most of what the
 customer is buying.

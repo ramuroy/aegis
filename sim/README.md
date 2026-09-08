@@ -1,5 +1,15 @@
 # sim — Gazebo + ArduPilot SITL
 
+## Continuation boundary: 2026-09-08
+
+Simulation remains the development/validation scope, not evidence of permission
+for a real residential flight. No SITL scenario or test suite was run this session.
+The [regulatory checkpoint](../docs/research/drone-regulation.md) proposes future
+cases for missing, expired and unavailable preflight evidence before real arming
+integration. Those cases are not yet implemented, and the proposed contract does
+not modify an accepted ADR. See the [handoff](../docs/HANDOFF-2026-09-08.md).
+
+
 Where AEGIS is validated. Real ArduPilot firmware in the loop, not a flight model
 approximation.
 

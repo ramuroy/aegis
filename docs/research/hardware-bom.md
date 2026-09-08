@@ -1,5 +1,18 @@
 # Hardware Bill of Materials
 
+## Applicability corrections: 2026-09-08
+
+The BOM remains a research proposal, not a fabricated/qualified flight article or
+a newly quoted procurement list. Mass classification must include the complete
+payload. A nano TC exemption does not establish a blanket UIN exemption; a micro
+mass target does not establish the non-commercial RPC exemption for commercial
+security work. Model-RPAS and Rule 42 exemptions have purpose/eligibility/site
+conditions. The [regulatory checkpoint](drone-regulation.md) qualifies broader
+claims below, including DGFT authorization exceptions and nano/model application
+instructions. Exact import classification, platform compatibility and aircraft
+approval remain open. See the [handoff](../HANDOFF-2026-09-08.md).
+
+
 > Research note for [AEGIS](../../README.md). Compiled 2026-09-07 from a multi-agent
 > web research sweep. Every claim below is sourced; confidence levels are the
 > researcher's own and are preserved verbatim.

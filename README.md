@@ -1,5 +1,19 @@
 <div align="center">
 
+## Continuation checkpoint: 2026-09-08
+
+Read the [current state](docs/STATE.md), [dated handoff](docs/HANDOFF-2026-09-08.md)
+and [drone-regulation research](docs/research/drone-regulation.md) before resuming.
+The previously interrupted eighth research workstream now has a sourced first
+pass; legal coverage and physical-flight approval remain **PARTIAL**.
+
+Next is RF-DETR perception: licence provenance, dataset preparation, then an
+inference baseline feeding existing georeferencing. This session changed docs,
+not runtime code, and did not rerun tests, install toolchains or measure hardware.
+The no-AGPL policy is accepted; its planned licence checker/CI enforcement is not
+yet implemented. Historical research figures and test reports are not new results.
+
+
 # AEGIS
 
 **Autonomous aerial security for gated residential communities.**
@@ -240,5 +254,4 @@ paper/            IEEE-format paper
 
 Apache-2.0. See [LICENSE](LICENSE).
 
-No AGPL-licensed code enters the inference or training path — this is enforced in
-CI, not by memory. ([ADR-0004](docs/adr/0004-rf-detr-over-ultralytics-yolo.md))
+No AGPL-licensed code enters the inference or training path — automated CI enforcement is planned but not implemented; see the current checkpoint above. ([ADR-0004](docs/adr/0004-rf-detr-over-ultralytics-yolo.md))

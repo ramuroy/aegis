@@ -1,5 +1,15 @@
 # Architecture Decision Records
 
+## 2026-09-08 continuation note
+
+Accepted ADRs below remain unchanged. The [session handoff](../HANDOFF-2026-09-08.md)
+records their retained rationale and the [regulatory checkpoint](../research/drone-regulation.md)
+identifies an open question in ADR-0003's offline-dispatch contract: local sensing
+availability is not proof of current aircraft launch permission. A refusal gate
+is proposed, not accepted or implemented. If resolving this changes the accepted
+contract, write a new ADR rather than modifying the existing decision record.
+
+
 This directory records the *reasoning* behind AEGIS's significant technical
 decisions, not just their outcome. Each record is immutable once accepted: if a
 decision is revisited, a new ADR supersedes the old one and the old one is

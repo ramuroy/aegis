@@ -1,5 +1,16 @@
 # paper — IEEE-format write-up
 
+## Evidence boundary: 2026-09-08
+
+The [regulatory checkpoint](../docs/research/drone-regulation.md) is a sourced but
+partial legal-research pass, not commercial or physical-flight clearance. Cite
+its instrument dates and retrieval limits; do not treat draft legislation as
+operative law. Earlier test counts are historical reports, not rerun results.
+No training, benchmark, SITL, prototype or flight validation occurred this session.
+Research comparisons, accepted design choices and measured AEGIS results must stay
+separate in publication claims. See the [handoff](../docs/HANDOFF-2026-09-08.md).
+
+
 **Status:** not started.
 
 ## Intended contribution

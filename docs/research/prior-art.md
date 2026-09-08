@@ -1,5 +1,26 @@
 # Prior Art & Market Landscape
 
+## Applicability corrections: 2026-09-08
+
+The original comparison below is retained as a dated source snapshot. For Indian
+flight/import claims, use the [new regulatory checkpoint](drone-regulation.md):
+
+- TC is not universally required before manufacturing a prototype; operation,
+  UIN, RPC and any exemptions must be assessed separately.
+- Rule 42 offers conditional R&D routes, not blanket permission for a commercial
+  residential-security pilot or service.
+- The non-TC suspension has accompanying nano/model application instructions;
+  neither the banner nor that route establishes approval for AEGIS.
+- DGFT authorization exceptions prevent treating all private security imports
+  as categorically impossible, but do not make a foreign bundle freely importable.
+- A competitor's product capability or historic BVLOS experiment is not evidence
+  that AEGIS has unattended/BVLOS/night operating permission.
+
+These corrections qualify any broader statements below. Accepted ADRs, not
+superseded alternative research recommendations, govern the implementation.
+See the [session handoff](../HANDOFF-2026-09-08.md).
+
+
 > Research note for [AEGIS](../../README.md). Compiled 2026-09-07 from a multi-agent
 > web research sweep. Every claim below is sourced; confidence levels are the
 > researcher's own and are preserved verbatim.

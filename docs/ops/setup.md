@@ -1,5 +1,15 @@
 # Development environment setup
 
+## Evidence status: 2026-09-08
+
+These are setup instructions, not proof that this machine is configured. This
+session did not install toolchains, run `make doctor`, or requalify the documented
+Jetson/JetPack/Ubuntu/ROS compatibility matrix. Earlier machine-state statements
+are historical. Confirm exact supported versions before a future installation;
+do not infer compatibility or working targets from a planned stack alone.
+See the [handoff](../HANDOFF-2026-09-08.md) for the next bounded task and open gates.
+
+
 Target platform is **Ubuntu 24.04 LTS**. That is not incidental — it is forced by
 a constraint chain worth understanding before you substitute anything:
 

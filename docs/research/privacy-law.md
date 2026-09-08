@@ -1,5 +1,16 @@
 # Privacy & Data Protection Law
 
+## Applicability update: 2026-09-08
+
+The new [drone-regulation checkpoint](drone-regulation.md) addresses aviation,
+not a fresh verification of every privacy/cyber-law claim in this historical note.
+Do not refresh the dates or confidence of DPDP/CERT-In conclusions by association.
+Privacy policy, society consent and a signed privacy map do not establish airspace
+permission; keep those controls separate. No-FRT, default non-identifiable output
+and the existing two-person exceptional-access policy remain accepted constraints.
+See the [handoff](../HANDOFF-2026-09-08.md) for what was and was not changed.
+
+
 > Research note for [AEGIS](../../README.md). Compiled 2026-09-07 from a multi-agent
 > web research sweep. Every claim below is sourced; confidence levels are the
 > researcher's own and are preserved verbatim.

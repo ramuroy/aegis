@@ -1,6 +1,16 @@
 # Project state
 
-**As of 2026-09-07.** Read this first when picking the project back up. It records
+## Session record and continuation boundary
+
+The [2026-09-08 handoff](HANDOFF-2026-09-08.md) records the context recovered,
+retained decisions and rationale, regulatory source recovery through Brave,
+documentation changes, publication boundary and next implementation sequence.
+The [regulatory checkpoint](research/drone-regulation.md) qualifies conflicting
+claims in the older research notes. Read both alongside the historical state below.
+No accepted ADR or runtime behavior changed; physical-flight gates remain open.
+
+
+**As of 2026-09-08.** Read this first when picking the project back up. It records
 what exists, what was decided and why, what changed along the way, and what to do
 next — in that order.
 
@@ -207,13 +217,16 @@ In rough dependency order.
 
 ### Known gaps
 
-- **DGCA regulation research is incomplete.** Seven of eight research topics
-  landed; the Indian drone-regulation sweep failed on a rate limit and its re-run
-  was stopped mid-flight. This is the highest-value gap — it determines what is
-  legally claimable — and should be the first thing re-run. What *is* known from
-  adjacent topics is captured in [prior-art](research/prior-art.md) and
-  [unit-economics](research/unit-economics.md), including the DGFT import
-  prohibition and the non-TC registration suspension.
+- **DGCA first-pass research resumed on 2026-09-08; deployment clearance remains
+  PARTIAL.** Read [drone regulation](research/drone-regulation.md) before relying
+  on broader legal claims in the older research notes. It records conditional
+  Rule 42 R&D eligibility, distinct TC/UIN/RPC gates, the non-TC suspension and
+  recovered nano/model contact-and-document route, import exceptions, amendments
+  through 2024 and source limits. Brave enabled visual reading of the 2024
+  gazette and the registration instructions. The complete current legal chain,
+  project eligibility/approval and unattended/BVLOS/night basis remain open. Preflight
+  airspace checks also create an unresolved constraint on offline dispatch;
+  accepted ADRs and implementation have not been changed.
 - `docs/ops/setup.md` is written but the toolchains it describes (ROS 2, Gazebo,
   Docker, PlatformIO) are **not yet installed** on the dev machine. `make doctor`
   reports current state.
@@ -238,10 +251,14 @@ which are where the design actually lives.
 
 ### Suggested next step
 
-Re-run the DGCA regulation research, then build the perception pipeline. The
-perception work is the longest pole and it is fully unblocked — the detector
-choice, licence position and error budget are all settled, and the georeferencing
-it feeds is already written and tested.
+Build the perception pipeline, starting with dataset, model-weight and dependency
+licence provenance, then dataset preparation and an RF-DETR inference baseline
+feeding the existing georeferencing. The detector choice and no-AGPL boundary are
+accepted decisions, not proof that every dataset or transitive dependency is
+cleared. Keep this software/simulation work separate from the physical-flight
+gates in [drone regulation](research/drone-regulation.md). The 2026-09-08 research
+follow-up did not rerun tests, install toolchains or measure model performance;
+earlier test counts and machine-state statements remain historical checkpoints.
 
 ---
 

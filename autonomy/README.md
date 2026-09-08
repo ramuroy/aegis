@@ -1,5 +1,16 @@
 # autonomy — ROS 2 workspace
 
+## Continuation boundary: 2026-09-08
+
+No autonomy runtime or live arming integration changed in this session. The
+[regulatory checkpoint](../docs/research/drone-regulation.md) identifies a proposed
+prelaunch evidence/refusal gate separate from privacy and corroboration. Its
+contract is not yet accepted or implemented. Preserve local ground alerts when
+a launch cannot be authorized, and treat already-airborne contingencies separately.
+Any change to an accepted offline-dispatch promise needs a new ADR.
+See the [handoff](../docs/HANDOFF-2026-09-08.md) before physical-flight work.
+
+
 Flight behaviour that runs on the companion computer: the sortie state machine,
 the precision-landing loop, failsafe handling, and the MAVLink bridge.
 

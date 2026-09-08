@@ -1,5 +1,14 @@
 # infra — deployment and observability
 
+## Continuation boundary: 2026-09-08
+
+This session added no CI workflow, licence checker, infrastructure deployment or
+toolchain installation. The no-AGPL boundary is an accepted policy, not a claim
+that automated dependency enforcement is already operating. The planned licence
+checker remains unfinished. Treat setup and CI material below as plans unless
+separate execution evidence is supplied. See the [handoff](../docs/HANDOFF-2026-09-08.md).
+
+
 **Status:** not started.
 
 ```
